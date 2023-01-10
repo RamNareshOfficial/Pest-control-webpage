@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* ------------------Container------------------------ */
+.containerss {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background: rgb(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .7s;
+    z-index: 99;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+.logo a h2 {
+    color: black;
+    text-shadow: 2px 3px 5px white;
+}
+
+.dropdown_menu {
+    margin-right: 50px;
+    display: flex;
+}
+
+.dropbtn {
+    background: none;
+    color: white;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover {
+    border-bottom: 2px solid red;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.containerss_hidden {
+    transform: translateY(-100px);
+}
+
+.containerss .btns {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.containerss .btns button {
+    border: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.containerss .btns button a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 400;
+    padding: 10px 15px;
+}
+
+.containerss .btns .login_btn {
+    background-color: #008bff;
+}
+
+.containerss .btns .register_btn {
+    background: red;
+}
+
+/* --------------------------Wrapper image-------------------- */
+.wrapper_image {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("images/cleaners.jpg") no-repeat center;
+}
+
+.wrapper_image img {
+    height: 100vh;
+    width: 100%;
+    opacity: 0.5;
+    background-size: cover;
+    background-position: center center;
+}
+
+.wrapper_image .wrapper_content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper_image .wrapper_content h1 {
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.wrapper_image .wrapper_content p {
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.wrapper_image .wrapper_content .modals_content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    font-weight: 200;
+}
+
+.wrapper_image .wrapper_content .modals_content p {
+    font-size: 16px;
+    padding: 10px 100px;
+    text-align: center;
+}
+
+.wrapper_image .wrapper_content .modals_content .marketing {
+    border-bottom: 3px solid red;
+    padding-bottom: 8px;
+}
+
+.wrapper_image .wrapper_content .modals_content .activities {
+    border-bottom: 3px solid rgba(0, 217, 255, 0.975);
+    padding-bottom: 8px;
+}
+
+.wrapper_image .wrapper_content .modals_content .solutions {
+    border-bottom: 3px solid rgb(71, 236, 66);
+    padding-bottom: 8px;
+}
+
+/* --------------------Second content----------------- */
+.second_content {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.second_content .care_demo {
+    width: 100%;
+}
+
+.second_content .care_demo h1 {
+    width: 50%;
+    color: #00bfff;
+    margin: auto;
+    font-weight: 500;
+    text-align: center;
+}
+
+.second_content .care_demo p {
+    width: 70%;
+    text-indent: 10px;
+    color: #494949;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cleaning_process {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.cleaning_process h1 {
+    width: 50%;
+    margin: auto;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.cleaning_process p {
+    width: 45%;
+    margin: auto;
+    font-weight: 200;
+    color: #494949;
+
+    font-size: 10px;
+    text-align: center;
+}
+
+.text_options {
+    display: flex;
+    width: 100%;
+    border: 1px solid rgba(154, 154, 154, 0.5);
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.text_options button {
+    border: none;
+    font-size: 20px;
+    background: white;
+}
+
+.text_options button a {
+    color: #00bfff;
+}
+
+.text_options div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.text_options div:hover {
+    background: #00bfff;
+}
+
+.text_options div p {
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+.options_img {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.options_img img {
+    width: 200px;
+    height: 250px;
+    border-radius: 30px 0 0 0;
+    margin-bottom: 10px;
+}
+
+.options_img .arrow_btn {
+    border: none;
+    color: #00bfff;
+    font-size: 40px;
+    font-weight: 500;
+    background: white;
+}
+
+.options_img div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.options_img div .book_btn {
+    color: white;
+    background: black;
+    font-size: 10px;
+    padding: 10px;
+    border: none;
+}
+
+.options_img div .book_btn:hover {
+    background: #00bfff;
+}
+
+/* --------------------------Color blue---------------- */
+.color_blue {
+    background: #00bfff;
+    color: white;
+    width: 100%;
+    margin-top: 80px;
+    padding: 50px;
+}
+
+.color_blue h1 {
+    text-align: center;
+    font-weight: 400;
+
+}
+
+.color_blue p {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 10px;
+
+}
+
+.red_logo {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: centers;
+}
+
+.red_logo button {
+    width: 20%;
+    margin-left: 500px;
+    margin-top: 40px;
+    background: red;
+    border: none;
+    padding: 10px;
+    color: white;
+}
+
+/* ---------------------Manager----------------- */
+.manager {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.manager h1{
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(54, 54, 54);
+}
+.manager img{
+    width: 100px;
+    border: 3px solid #000;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.manager .customer_img h1{
+    color: rgb(50, 50, 50);
+    font-size: 20px;
+}
+.manager .customer_img p{
+    color: rgb(123, 123, 123);
+    font-size: 15px;
+}
+
+/* ------------------Form data--------------------{ */
+.form_data{
+    width: 90%;
+    position: relative;
+    margin: auto;
+    align-items: center;
+    margin-top: 100px;
+}
+.form_content img{
+    width: 100%;
+}
+.form_wrapper{
+    position: absolute;
+    top: 90px;
+}
+.form_wrapper input{
+    border: none;
+    padding: 5px;
+    background: none;
+    border-bottom: 2px solid #00b8ff;
+}
+.form_wrapper .form_row{
+    display: flex;
+}
+.first_name{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+}
+.last_name{
+    display: flex;
+    flex-direction: column;
+}
+.form_column{
+    display: flex;
+    flex-direction: column;
+}
+.column_div{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.submit_btn{
+    border: none;
+    border-radius: 5px;
+    background: #00b8ff;
+    margin-top: 50px;
+    padding: 15px 40px;
+    text-align: center;
+    margin-left: 100px;
+}
+/* -----------------------Footer------------------ */
+.footer {
+    background: rgb(243, 243, 243, 0.8);
+    border-top: 3px solid #00b8ff;
+}
+
+.footer .footer_area {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .footer_area h4 {
+    font-size: 15px;
+    color: #494949;
+    font-weight: 400;
+}
+
+.footer_contact p {
+    font-size: 12px;
+}
+
+.footer .footer_area .logo_links i {
+    padding: 12px;
+    font-size: 10px;
+    background: #00bfff;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.footer .footer_area .logo_links i:hover {
+    color: #00bfff;
+    background: #fff;
+}
+
+.footer .footer_area .footer_subscribe p {
+    font-size: 10px;
+}
